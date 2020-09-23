@@ -1,0 +1,66 @@
+/* change the link color */
+.navbar-custom .navbar-nav .nav-link {
+    color: rgba(0,0,0,.5);
+}
+
+
+nav .nav items li a{
+	text-decoration: none;
+	font-family: 'Poppins', sans-serif;
+	font-style: normal;
+	line-height: 1.3em;
+	margin:0 auto;
+	font-size: 15px;
+
+}
+nav{
+    background: white;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%
+}
+
+nav .nav items{
+    display: flex;
+    list-style: none;
+    flex: 1;
+    color: black;
+}
+
+#consultations{
+    color: white;
+    background-color: black;
+    border-radius: 12px;
+    font-size: 15px;
+    font-style: normal;
+	font-weight: normal;
+	font-family: Poppins;
+	padding: 8px 30px;
+	float: right;
+	margin-right: 80px;
+}
+
+
+
+#menuItems a{
+	text-decoration: none;
+	font-family: 'Poppins', sans-serif;
+	font-style: normal;
+	line-height: 1.3em;
+	margin:0 auto;
+	font-size: 15px;
+	color: #7B7B7B;
+
+
+}
+
+
+#logo{
+	padding-left: 80px;
+}
+
+#menuItems a:hover {
+  color: #804123;
+  font-weight: bold;
+}
+

@@ -1,0 +1,64 @@
+{% load static %}
+<html>
+
+  <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="{% static '/css/base.css' %}">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.7/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+
+  </head>
+
+
+    <nav class="navbar navbar-expand-md navbar-white" id="#topNav">
+        <img id="logo" class="navbar-brand" src="./static/css/illum.png" alt="Illum Visions logo">
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav mr-auto" id="menuItems">
+                        <a href="#" class="nav-item nav-link">home</a>
+                        <a href="#" class="nav-item nav-link">our work</a>
+                        <a href="#" class="nav-item nav-link">about</a>
+                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                            <i class="fa fa-bars"></i>
+                          </a>
+                    </div>
+                </div>
+
+            <div class="navbar-nav ml-auto form-inline">
+                <button type="button" id="consultations">Consultations</button>
+            </div>
+    </nav>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("navbarCollapse");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+<body>
+
+
+</body>
+
+
+
+
+</html>

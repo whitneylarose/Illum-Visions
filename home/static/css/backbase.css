@@ -1,0 +1,103 @@
+#topNav{
+    font-size: 15px;
+    padding-right: 30px;
+    background: white;
+    border: none;
+    top: 50%;
+    overflow: hidden;
+}
+
+html,body,nav {
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+}
+
+
+#consultations{
+    color: white;
+    background-color: black;
+    border-radius: 12px;
+    font-size: 15px;
+    font-style: normal;
+	font-weight: normal;
+	font-family: Poppins;
+	padding: 8px 30px;
+	 float: right;
+}
+
+
+#menuItems a{
+	text-decoration: none;
+	font-family: 'Poppins', sans-serif;
+	font-style: normal;
+	text-transform: normal;
+	letter-spacing: normal;
+	line-height: 1.3em;
+	padding-right: 30px;
+	margin:0 auto;
+	font-size: 15px;
+	color: #7B7B7B;
+
+}
+
+#menuItems :hover {
+	color: #804123;
+	font-weight: bolder;
+}
+
+#logo {
+    padding-top: 10px;
+    margin-left: 40px;
+    width: 90px;
+    height: 50px;
+}
+
+/* resize images */
+.container img {
+    width: 100%;
+    height: auto;
+}
+
+#navbarCollapse{
+  float: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 600px) {
+ #logo, #consultations {
+    float: none;
+    display: block;
+  }
+
+ #navbarCollapse a {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #topNav(:first-child) {display: none;}
+  #menuItems a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #topNav.responsive {position: relative;}
+  #topNav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  #topNav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
