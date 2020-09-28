@@ -1,0 +1,40 @@
+hr{
+  display: block;
+  margin-top: 1.0em;
+  margin-bottom: 0.5em;
+  margin-left: 20px;
+  margin-right: auto;
+  border-style: solid;
+  background-color: #E47957;
+  width: 10%;
+}
+
+#ourTeam{
+    background-color:#F4E8DC;
+    height: 700px;
+    max-width:100%;
+
+}
+
+#aboutVideo{
+  background-color: white;
+  height: 700px;
+  max-width:100%;
+}
+
+#aboutText{
+    width: 90%;
+    margin-left: 10%;
+}
+
+#ourVisionaryTeam{
+
+    margin-bottom: 5%;
+
+}
+
+.card{
+
+    width: 100%;
+    height: auto;
+}

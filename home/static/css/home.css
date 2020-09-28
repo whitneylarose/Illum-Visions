@@ -1,62 +1,330 @@
-
 #tagline{
   margin: 0;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  max-width:100%;
+  max-width:90%;
+  text-align: center;
+  vertical-align: middle;
+
+}
+
+html, body{
+    height:100%;
+}
+
+#rotatingLetters{
+    color: #804123;
+    font-weight: bold;
+    display: inline;
 }
 
 h3{
-
     text-decoration: none;
 	font-family: 'Poppins', sans-serif;
     color:black;
     font-weight:lighter;
     font-size: 23px;
 }
-h1 {
-
-  font-size: 3.5em;
-  font-weight: 200;
-  margin: 0.4em 0;
-  color:black;
 
 
-}
-
-#rotatingLetters{
-
-    color: #804123;
-    font-weight: bold;
+#social{
+    font-weight: 200;
+    margin: 0.4em 0;
+    color:black;
+    block: in-line;
 
 }
 
 #whatwedo{
-
     background-color:#F4E8DC;
-    height:700px;
+    height: auto;
     max-width:100%;
 
-
 }
-#socialtransformation{
 
+#strategy-info{
+  border: 1px solid rgba(75, 11, 13, 0.09);
+  border-radius: 50%;
+}
+
+.btn-circle.btn-xl {
+    width: 70px;
+    height: 70px;
+    padding: 10px 16px;
+    border-radius: 35px;
+    font-size: 24px;
+    line-height: 1.33;
+}
+
+.btn-circle {
+    width: 30px;
+    height: 30px;
+    padding: 6px 0px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.42857;
+}
+
+#row1, #row2{
+    margin-bottom: 4%;
+}
+
+#socialtransformation{
   background-color: white;
   height: 700px;
   max-width:100%;
+}
+
+#getintouch{
+    background-color:black;
+    height: 800px;
+    width:100%;
+    display: block;
+
+}
+
+hr{
+  display: block;
+  margin-top: 1.0em;
+  margin-bottom: 0.5em;
+  margin-left: 20px;
+  margin-right: auto;
+  border-style: solid;
+  background-color: #E47957;
+  width: 10%;
+}
 
 
+body {
+  font-family: Poppins, sans-serif;
+
+}
+
+.card {
+  float:right;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 90%;
+  height: 100%;
+  margin-bottom: 2%;
+  transition: 0.3s;
+  transform-style: preserve-3d;
+  font-size; 15px;
+  padding: 16px;
+  text-align: left;
+  background-color: #f1f1f1;
+
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
 
 
-#getintouch{
+* {
+  box-sizing: border-box;
+}
 
+
+
+/* Float four columns side by side */
+.column {
+  float: right;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {
+    margin: 0 -5px;
+    width:100%;
+}
+
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+
+#strategy, #uxResearch, #design, #branding{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%;
+  width: 40%;
+}
+
+#contactHeader {
+    text-color: white;
+    margin-top: 2%;
+    text-align: center;
+    margin-bottom: 4%;
+
+}
+
+#contactInfo{
+    width: 80%;
+}
+
+form {
+margin: 0 auto;
+width:250px;
+}
+
+.form-group{
+    border:none;
+
+}
+
+#name, #email, #message{
+
+    font-size: 25px;
+}
+
+#name, #email{
+    height: 90px;
     background-color:black;
-    height:700px;
-    max-width:100%;
+    color: white;
+    margin-bottom:2%;
+}
 
+#message{
+
+    height: 300px;
+    background-color:black;
+    color: white;
+}
+
+#gitButton{
+    color: black;
+    background-color: white;
+    font-size: 20px;
+    font-style: normal;
+	font-weight: normal;
+	font-family: Poppins;
+	padding: 8px 30px;
+	justify-content: center;
+	text-align: center;
+	padding-top: 10px;
+	margin-top:2%;
+	height: 63px;
+	width: 191px;
+	position: absolute;
+	border-radius: 0;
+}
+
+input[type=text]{
+    border-bottom: 5px solid red;
+}
+
+.fa-facebook, .fa-twitter, .fa-instagram, .fa-linkedin{
+  background: #F4E8DC;
+  color: black;
+  float: right;
+  margin-right: 10px;
+
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+footer{
+    width: 100%;
+    height: 7%;
+    bottom: 0;
+    background-color: #F4E8DC;
+
+}
+
+.fade {
+    opacity: 0;
+    -webkit-transition: opacity .15s linear;
+    transition: opacity .15s linear;
+}
+
+#plus{
+
+    background-color: white;
+    border-radius:60%;
+}
+
+
+.flip-card {
+  float:right;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 90%;
+  height: 100%;
+  margin-bottom: 2%;
+  background-color:white;
+
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: auto;
+  text-align: left;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  max-width: 100%;
+  height: auto;
+  padding-left: 10%;
+  padding-right: 10%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #fff;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #E37956;
+  color: white;
+  text-align:center;
+  transform: rotateY(180deg);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+
+#learnMore{
+    background-color:#FFF6ED;
+    text-align: center;
+    color: black;
+    border-radius: 12px;
+    font-size: 15px;
+    font-style: normal;
+	font-weight: normal;
+	font-family: Poppins;
+	padding: 8px 30px;
 }
 
