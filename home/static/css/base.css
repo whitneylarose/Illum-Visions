@@ -40,6 +40,9 @@ nav .nav items{
 	margin-right: 80px;
 }
 
+.active a{
+   text-decoration: underline;
+}
 
 
 #menuItems a{
@@ -64,3 +67,8 @@ nav .nav items{
   font-weight: bold;
 }
 
+
+.btn:focus {
+  outline: none;
+  box-shadow: none;
+}

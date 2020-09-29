@@ -45,11 +45,18 @@
 
           </ul>
           <div class="form-inline mt-2 mt-md-0">
-              <button class="navbar-nav float-right"type="button" id="consultations">Consultations</button>
+              <button class=" btn navbar-nav float-right"type="button" id="consultations" onclick="contactUs()">Consultations</a></button>
           </div>
         </div>
       </nav>
 
+
+    <script>
+    function contactUs()
+    {
+         location.href = "{% url 'home' %}#getintouch";
+    }
+    </script>
 
 
 <body>
