@@ -25,15 +25,15 @@
   </head>
 
 
-  <nav class="navbar navbar-expand-md navbar-white fixed-top white">
-        <a class="navbar-brand" href="#"><img id="logo" class="navbar-brand" src="./static/css/illum.png" alt="Illum Visions logo"></a>
+  <nav id="theNav" class="navbar navbar-expand-md navbar-white fixed-top white">
+        <a class="navbar-brand" href="#"><img id="logo" class="navbar-brand" src="./static/media/Illum.png" alt="Illum Visions logo"></a>
         <button class="navbar-toggler collapsed ml-auto navbar-light" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="navbar-collapse collapse" id="navbarCollapse" style="">
           <ul id="menuItems" class="navbar-nav mx-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="{% url 'home' %}">home <span class="sr-only">(current)</span></a>
+            <li class="nav-item">
+              <a class="nav-link active" href="{% url 'home' %}">home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="{% url 'our_work' %}">our work</a>
@@ -56,15 +56,33 @@
     {
          location.href = "{% url 'home' %}#getintouch";
     }
+
     </script>
 
 
 <body>
 
 
+
 </body>
 
+<!-- Footer -->
+<footer class="page-footer font-small blue">
 
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+    <a href="https://illumvisions.com/"> Illum Visions</a>
+      <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+  </div>
+
+
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
 
 
 </html>

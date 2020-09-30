@@ -1,4 +1,4 @@
-#tagline{
+#intro{
   margin: 0;
   position: absolute;
   top: 50%;
@@ -6,12 +6,13 @@
   transform: translate(-50%, -50%);
   max-width:90%;
   text-align: center;
-  vertical-align: middle;
 
 }
 
-html, body{
-    height:100%;
+#social{
+
+    margin-bottom:2%;
+
 }
 
 #rotatingLetters{
@@ -20,12 +21,9 @@ html, body{
     display: inline;
 }
 
-h3{
-    text-decoration: none;
-	font-family: 'Poppins', sans-serif;
-    color:black;
+#tagLine{
+    font-size:2vw;
     font-weight:lighter;
-    font-size: 23px;
 }
 
 
@@ -39,8 +37,8 @@ h3{
 
 #whatwedo{
     background-color:#F4E8DC;
-    height: auto;
     max-width:100%;
+    padding-bottom: 4%;
 
 }
 
@@ -74,7 +72,7 @@ h3{
 
 #socialtransformation{
   background-color: white;
-  height: 700px;
+  height: 600px;
   max-width:100%;
 }
 
@@ -86,15 +84,12 @@ h3{
 
 }
 
-hr{
-  display: block;
-  margin-top: 1.0em;
-  margin-bottom: 0.5em;
-  margin-left: 20px;
-  margin-right: auto;
-  border-style: solid;
-  background-color: #E47957;
+
+hr.line {
+  border: 3px solid #E47957;
   width: 10%;
+  margin-top: 5%;
+  margin-bottom: 2%;
 }
 
 
@@ -108,7 +103,7 @@ body {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
   width: 90%;
-  height: 100%;
+
   margin-bottom: 2%;
   transition: 0.3s;
   transform-style: preserve-3d;
@@ -226,33 +221,6 @@ input[type=text]{
     border-bottom: 5px solid red;
 }
 
-.fa-facebook, .fa-twitter, .fa-instagram, .fa-linkedin{
-  background: #F4E8DC;
-  color: black;
-  float: right;
-  margin-right: 10px;
-
-}
-.fa {
-  padding: 20px;
-  font-size: 30px;
-  height: 50px;
-  width: 50px;
-  text-align: center;
-  text-decoration: none;
-}
-
-.fa:hover {
-    opacity: 0.7;
-}
-
-footer{
-    width: 100%;
-    height: 7%;
-    bottom: 0;
-    background-color: #F4E8DC;
-
-}
 
 .fade {
     opacity: 0;
@@ -271,11 +239,10 @@ footer{
   float:right;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
-  width: 90%;
+  width: 100%;
   height: 100%;
   margin-bottom: 2%;
-  background-color:white;
-
+  background-color: #fff;
 }
 
 .flip-card-inner {
@@ -286,13 +253,14 @@ footer{
   transition: transform 0.6s;
   transform-style: preserve-3d;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  background-color: #fff;
 }
 
 
 .flip-card-front, .flip-card-back {
   position: absolute;
-  max-width: 100%;
-  height: auto;
+  width: 100%;
+  height: 100px;
   padding-left: 10%;
   padding-right: 10%;
   -webkit-backface-visibility: hidden;
@@ -300,15 +268,20 @@ footer{
 }
 
 .flip-card-front {
-  background-color: #fff;
   color: black;
+  height:100%;
 }
 
 .flip-card-back {
   background-color: #E37956;
+  padding-bottom:15%;
   color: white;
-  text-align:center;
   transform: rotateY(180deg);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 200%;
+
 }
 
 .flip-card:hover .flip-card-inner {
@@ -329,12 +302,11 @@ footer{
 }
 
 .sentence{
-font-size:700%;
+font-size:8vw;
 text-align:center;
  margin-right: 50%;
  margin-bottom: 5%;
 }
-
 
 /*Horizontal Sliding*/
 .slidingHorizontal{
@@ -349,27 +321,24 @@ text-align:center;
 	opacity: 0;
 	overflow: hidden;
 	position: absolute;
-	color: #E7B896;
+	color: #804123;
 
 }
 .slidingHorizontal span:nth-child(2){
 	animation-delay: 2.5s;
 	-ms-animation-delay: 2.5s;
 	-webkit-animation-delay: 2.5s;
-	color: #AF7136;
 
 }
 .slidingHorizontal span:nth-child(3){
 	animation-delay: 5s;
 	-ms-animation-delay: 5s;
 	-webkit-animation-delay: 5s;
-	color: #804123;
 }
 .slidingHorizontal span:nth-child(4){
 	animation-delay: 7.5s;
 	-ms-animation-delay: 7.5s;
 	-webkit-animation-delay: 7.5s;
-	color: #4B0B0D;
 }
 
 

@@ -1,121 +1,49 @@
-h1 {
+#pagetitle{
 
-	position: absolute;
-	width: 907px;
-	height: 52px;
-	left: 200px;
-	top: 202px;
+    font-size:3vw;
+    text-align: center;
+    padding-top: 2%;
+}
 
-	font-family: Poppins;
-	font-style: normal;
-	font-weight: 500;
-	font-size: 45px;
-	line-height: 67px;
+
+hr.line {
+  border: 3px solid #E47957;
+  width: 10%;
+  margin-bottom: 1%;
+  margin-left:45%;
+}
+
+#bio{
+
 	text-align: center;
-
-	color: #000000;
-
+	font-size:1.5vw;
+	padding-top:3%;
+	padding-left:20%;
+	padding-right:20%;
 }
 
-h3 {
-
-	/*Line 34 */
-
-
-	position: absolute;
-	width: 93px;
-	height: 0px;
-	left: 600px;
-	top: 183px;
-
-	border: 2px solid #C06218;
-
-}
-
-
-p {
-
-	position: absolute;
-	width: 918px;
-	height: 65px;
-	left: 185px;
-	top: 292px;
-
-	font-family: Poppins;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 23px;
-	line-height: 34px;
-	text-align: center;
-	color: #000000;
-
-}
-
-#orangeline {
-		/* Line 34 */
-
-
-	position: absolute;
-	width: 93px;
-	height: 0px;
-	left: 546px;
-	top: 183px;
-
-	border: 2px solid #C06218;
-
-
-}
-#whatwevedone{
+#ourwork{
 
   	background-color:#F4E8DC;
     height:400px;
     max-width:100%;
-
-	/*background: linear-gradient(
-	to bottom,
-	#F4E8DC,
-	#F4E8DC 50%,
-	#E37956 50%,
-	#E37956
-	);
-	background-size: 100% 20px;*/
 }
 
-#socialrectangle{
-
-	 /* Rectangle 79 	left: 0%;
-	right: 0%;
-	top: 0%;
-	bottom: 0%;
-	*/
-
-
-	position: absolute;
-	height: 400px;
-	max-width: 100%;
-	background: #E5E5E5;
-
+#bocologo{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
-/* Rectangle 87
-
-#rectangle{
-	position: absolute;
-	width: 1152px;
-	height: 380px;
-	left: 0px;
-	top: 105px;
-
-	background: #F4E8DC;
-}*/
-
-#tagline{
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  max-width:100%;
+#projects{
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
+
+#bocoDescription{
+
+    padding-right: 10%;
+    padding-left:5%;
+}
+
+
 
 

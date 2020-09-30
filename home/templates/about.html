@@ -18,71 +18,119 @@
 
 </head>
 {% include "base.html" %}
+<body>
 
 
-        <div id="aboutVideo" class="row container-fluid">
 
 
+<!--<div class="embed-responsive embed-responsive-16by9">-->
+<!--  <iframe class="embed-responsive-item" src="https://youtu.be/NFpRni8op_8" allowfullscreen></iframe>-->
+<!--</div>-->
+
+<!--<video controls>-->
+<!--<source src="https://youtu.be/NFpRni8op_8' type='video/mp4' %}">-->
+<!--Your browser does not support the video tag.-->
+<!--</video>-->
+        <div id="video" class="container-fluid">
 
         </div>
 
-
-        <div id="ourTeam" class="row container-fluid">
+        <div id="ourTeam" class="container-fluid">
 
              </br>
 
-                <div id="sectionTitle" class="container">
+                <div id="about">
 
-                    <hr>
+
+                    <hr class="line">
                     <h2 id="ourVisionaryTeam">
                         Our Visionary Team
                     </h2>
 
-                     <p id="aboutText">about text about text about text about text about text about text about text about text about text
-                    about text about text about text about text about text about text about text about text about text
-                    about text about text about text about text about text about text about text about text about text
-                    about text about text about text about text about text about text about text about text about text
-                    about text about text about text about text about text about text </p>
+                     <p >Technology is ever changing and so are the people that use it.
+                         With the great shift in our society’s values and priorities, Illum finds itself on the precipice of change.
+                         Taking a different approach to technology design, Illum consults companies of all sizes to create products and services that extend to all races, genders, ethnicities, classes, ages, and all other identities.</p>
+
+                    <p>We are a team of designers, researchers, engineers, and technologists that have come together to facilitate the shift towards a more inclusive future.</p>
+
+                    <p>Illum represents the fire and passion that we need to rebalance this world.</p>
+
+                    <p>The rise of technology has greatly shifted.
+                        We are taking a different approach to things.
+                        Illum consults companies of all sizes to create products and services that extend to all races, genders, ethnicities, classes, ages, and all other identities.</p>
+
+                    <ul>Our Audience
+                        <li>Medium-sized technology companies that do not currently allocate their resources to culturally sensitive (etc.) research for creating various content/products/services </li>
+                        <li>Small businesses looking to enhance their technical capabilities.</li>
+                        <li>Established companies searching for leading-edge designs </li>
+                        <li>PR firms that work with companies that need help</li>
+                     </ul>
 
                 </div>
 
 
-            <div id ="row1" class="row justify-content-center">
+            <div id="teamMembers" class="row justify-content-md-center">
                   <div class="col-sm-4">
-                    <div class="card">
-                      <div class="card-body">
-                          <h5 class="card-title">Whitney Nelson</h5>
-                          <img id="whitney" class="card-img-top img-fluid" src="./static/css/strategy.png" alt="UX Strategy icon">
-                          </div>
-                      </div>
-
+                   <img src="./static/media/Illum.png" class="img-responsive" alt="Cinque Terre">
                   </div>
-                  <div class="col-sm-4">
-                    <div class="card">
-                      <div class="card-body">
-                          <h5 class="card-title">Zora Moore</h5>
-                        <img id="zora" class="card-img-top img-fluid " src="./static/css/ux_research.png" alt="UX Research icon">
-                        </br>
-                      </div>
-                    </div>
+                <div class="col-sm-4">
+                   <img src="./static/media/Illum.png" class="img-responsive" alt="Cinque Terre">
                   </div>
-
-                    <div class="col-sm-4">
-                    <div class="card">
-                      <div class="card-body">
-                        <h5 class="card-title">Kamali Lowe</h5>
-                        <img id="kamali" class="card-img-top img-fluid " src="./static/css/ux_research.png" alt="UX Research icon">
-                        </br>
-
-                      </div>
-                    </div>
+                <div class="col-sm-4">
+                   <img src="./static/media/Illum.png" class="img-responsive" alt="Cinque Terre" >
                   </div>
+            </div>
+
+        </div>
+
+        <div class="container-fluid justify-content-center">
+
+            <div id="pillarsTitle">
+                <hr class="line">
+                <h2>Our Pillars</h2>
+            </div>
+
+            <div class="row no-gutters" id=intersectionality">
+                <div id="number" class="col-6 col-md-4">
+                    <h3 id="one" style="text-align:left;">1</h3>
                 </div>
+                 <div id="pillar1" class="col-12 col-md-8" style="text-align:left;width:90%;">
+                     <h5>Intersectionality</h5>
+                <h6>Wait! What is intersectionality? </h6>
+                <p>Intersectionality is a theoretical framework that carefully examines the complex nature of related and interdependent social groupings such as race, gender, class, sexual orientation, and religion.
+                    Through understanding the nature of people’s overlapping identities and experiences we are able to understand the complexity of prejudices they face.</p>
 
+                <h6>Soo…. What does that have to do with technology? </h6>
+
+                <p>Technology is often created in the reflection of its users. However, many research studies show that users within marginalized groups are often overlooked or ignored during the design process.
+                By taking an intersectional design approach, we help companies reach marginalized users that are traditionally neglected by conventional design practices prompting designers to carefully examine and eliminate their own biases.</p>
+                 </div>
+            </div>
+
+
+            <div class="row no-gutters" id="empathy">
+
+                 <div id="pillar2" class="col">
+                <h5>Empathy</h5>
+                <p>Empathy— one of the most important traits humans have the ability to demonstrate, is what guides us through each step of our design process.
+                    One of our biggest advantages is our ability to understand and share another person's experiences and emotions.
+                    Our personal experiences and backgrounds position us to be able to empathize with marginalized communities often forgotten and left behind by technology pushing us to work towards creating technology that successfully uplifts their needs and wants.
+                </p>
+                 </div>
+                 <div class="col">
+                    <h3 id="two">2</h3>
+                 </div>
+
+
+            </div>
 
 
         </div>
 
 
+</body>
+
+
+{% include "base.html" %}
 
 </html>

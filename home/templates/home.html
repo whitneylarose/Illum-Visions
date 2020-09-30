@@ -28,98 +28,22 @@
 
         <div id="socialtransformation" class="row container-fluid justify-content-center">
 
-            <div class="container" id="tagline">
+            <div class="container-fluid" id="intro">
 
-<!--                 <h1 id="social" style="font-size:800%;" onload="typeWriter()">-->
-<!--                        Social-->
-<!--                      <span-->
-<!--                           id="rotatingLetters"-->
-<!--                              class="txt-rotate"-->
-<!--                         data-period="2000"-->
-<!--                         data-rotate='["transformation.", "advancement.", "evolution.", "development."]'></span>-->
-<!--                    </h1>-->
-
-
-<!--                    <script>-->
-<!--                        var TxtRotate = function(el, toRotate, period) {-->
-<!--                          this.toRotate = toRotate;-->
-<!--                          this.el = el;-->
-<!--                          this.loopNum = 0;-->
-<!--                          this.period = parseInt(period, 10) || 2000;-->
-<!--                          this.txt = '';-->
-<!--                          this.tick();-->
-<!--                          this.isDeleting = false;-->
-<!--                        };-->
-
-<!--                        TxtRotate.prototype.tick = function() {-->
-<!--                          var i = this.loopNum % this.toRotate.length;-->
-<!--                          var fullTxt = this.toRotate[i];-->
-
-<!--                          if (this.isDeleting) {-->
-<!--                            this.txt = fullTxt.substring(0, this.txt.length - 1);-->
-<!--                          } else {-->
-<!--                            this.txt = fullTxt.substring(0, this.txt.length + 1);-->
-<!--                          }-->
-
-<!--                          this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';-->
-
-<!--                          var that = this;-->
-<!--                          var delta = 300 - Math.random() * 100;-->
-
-<!--                          if (this.isDeleting) { delta /= 2; }-->
-
-<!--                          if (!this.isDeleting && this.txt === fullTxt) {-->
-<!--                            delta = this.period;-->
-<!--                            this.isDeleting = true;-->
-<!--                          } else if (this.isDeleting && this.txt === '') {-->
-<!--                            this.isDeleting = false;-->
-<!--                            this.loopNum++;-->
-<!--                            delta = 500;-->
-<!--                          }-->
-
-<!--                          setTimeout(function() {-->
-<!--                            that.tick();-->
-<!--                          }, delta);-->
-<!--                        };-->
-
-<!--                        window.onload = function() {-->
-<!--                          var elements = document.getElementsByClassName('txt-rotate');-->
-<!--                          for (var i=0; i<elements.length; i++) {-->
-<!--                            var toRotate = elements[i].getAttribute('data-rotate');-->
-<!--                            var period = elements[i].getAttribute('data-period');-->
-<!--                            if (toRotate) {-->
-<!--                              new TxtRotate(elements[i], JSON.parse(toRotate), period);-->
-<!--                            }-->
-<!--                          }-->
-<!--                          // INJECT CSS-->
-<!--                          var css = document.createElement("style");-->
-<!--                          css.type = "text/css";-->
-<!--                          css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";-->
-<!--                          document.body.appendChild(css);-->
-<!--                        };-->
-<!--                    </script>-->
-
-<!--            </br>-->
-<!--                </br>-->
-
+                <div id="social">
                   <h1 class="sentence">Social
                     <div class="slidingHorizontal">
-                      <span>Transformation.</span>
-                      <span>Advancement.</span>
-                      <span>Evolution.</span>
-                      <span>Development.</span>
+                      <span>transformation.</span>
+                      <span>advancement.</span>
+                      <span>evolution.</span>
+                      <span>development.</span>
                     </div>
                   </h1>
+                </div>
 
-
-
-
-
-
-                    <h3>
-                        Increasing the impact of technology through intersectional design thinking
-                    </h3>
-
+                <h3 id="tagLine">
+                    Increasing the impact of technology through intersectional design thinking
+                </h3>
 
             </div>
 
@@ -132,7 +56,7 @@
 
                 <div id="wwd_content" class="container">
 
-                    <hr>
+                    <hr class="line">
                     <h2>
                         What We Do
                     </h2>
@@ -192,32 +116,29 @@
 
 
 
-                <div id ="row2" class="row justify-content-end">
+             <div id ="row2" class="row justify-content-end">
                   <div class="col-sm-4">
 
 
-
-
                         <div class="flip-card">
-
                               <div class="flip-card-inner justify-content-center">
                                   <div class="flip-card-front">
                                     <img id="design" class="card-img-top img-fluid " src="./static/css/ux_design.png" alt="UX Design icon">
                                     </br>
-                                    <h5 class="card-title">Design</h5>
-                                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                      <button class="btn" type="button" id="learnMore">
-                                          Learn More
-                                      </button>
-<!--                                    <button>-->
-<!--                                        <i class="material-icons" style="font-size:48px;color:#E47957">add_circle</i>-->
-<!--                                    </button>-->
+                                    <h4 class="card-title">User Experience Design</h4>
+                                    <p class="card-text">Using insights gathered through our research we develop the best design solutions for our clients.</p>
                                   </div>
-                                   <div class="flip-card-back">
-                                        <p>hello</p>
+                                   <div class="flip-card-back align-middle">
+                                       <p style="font-weight:bold; text-align: center;">Services</p>
+                                        <ul>
+                                            <li>Web Design </li>
+                                            <li>Android and IOS app design </li>
+                                            <li>Prototyping </li>
+                                            <li>Interaction Design </li>
+                                            <li>Product Design </li>
+                                        </ul>
                                     </div>
-                            </div>
-
+                              </div>
                         </div>
 
 
@@ -235,8 +156,12 @@
                         <i class="material-icons" style="font-size:48px;color:#E47957">add_circle</i>
                       </div>
                     </div>
+
+
+
                   </div>
-                </div>
+
+             </div>
 
         </div>
 
@@ -255,48 +180,33 @@
                  We would love to work with you!
             </h1>
 
-        <form class="justify-content-center" id="contactInfo">
+        <form class="justify-content-center" id="contactInfo" action=”mailto:illumvisions@gmail.com” method=”post” enctype=”multipart/form-data” name=”EmailForm”>
           <div class="form-row">
             <div class="form-group col-md-6">
-              <input type="email" class="w3-input form-control border-bottom" id="name" placeholder="Your name (required)">
+              <input type="name" class="w3-input form-control border border-top-0 border-right-0 border-left-0" id="name" placeholder="Your name (required)">
             </div>
             <div class="form-group col-md-6">
-              <input type="password" class="form-control border-bottom" id="email" placeholder="Your email (required)">
+              <input type="email" class="form-control border border-top-0 border-right-0 border-left-0" id="email" placeholder="Your email (required)">
             </div>
           </div>
           <div class="form-group">
-            <textarea class="form-control" id="message" placeholder="Your message"></textarea>
+            <textarea class="form-control border border-top-0 border-right-0 border-left-0" id="message" placeholder="Your message"></textarea>
           </div>
+            <div class="d-flex justify-content-center">
+            <input class="btn btn-default" id="gitButton" type="submit" value="Get in Touch">
+        </div>
         </form>
 
-        <div class="d-flex justify-content-center">
-          <button id="gitButton" class="btn btn-default">Get in Touch</button>
+
+
         </div>
 
         </div>
-
-        </div>
-
-
-
-
-
-
-
-
-        <footer class="footer">
-            <a href="#" class="fa fa-facebook"></a>
-            <a href="#" class="fa fa-twitter"></a>
-            <a href="#" class="fa fa-instagram"></a>
-            <a href="#" class="fa fa-linkedin"></a>
-
-
-        </footer>
 
 
     </body>
 
-
+{% include "base.html" %}
 
 </html>
 
