@@ -41,6 +41,7 @@
                   </h1>
                 </div>
 
+
                 <h3 id="tagLine">
                     Increasing the impact of technology through intersectional design thinking
                 </h3>
@@ -71,27 +72,27 @@
                           </br>
                               <h5 class="card-title">UX Strategy</h5>
                             <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                            <button id="plus" type="button" class="btn" data-toggle="modal" data-target="#exampleModalCenter">
-                            <i class="material-icons" style="font-size:48px;color:#E47957">add_circle</i>
-                            </button>
-
-                            <!-- Modal -->
-                            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                              <div class="modal-dialog modal-dialog-centered" role="document">
-                                <div class="modal-content">
-                                  <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLongTitle">UX Research</h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                      <span aria-hidden="true">&times;</span>
-                                    </button>
-                                  </div>
-                                  <div class="modal-body">
-                                    Hello
-                                  </div>
-
-                                </div>
-                              </div>
+                          <div class="popup" onclick="strategyPopup()">
+                              <i class="material-icons" style="font-size:48px;color:#E47957">add_circle</i>
+                              <span class="popuptext" id="strategyPopup">
+                                  <p style="font-weight:bold; text-align: center;">Services</p>
+                                        <ul>
+                                            <li>Web Design </li>
+                                            <li>Android and IOS app design </li>
+                                            <li>Prototyping </li>
+                                            <li>Interaction Design </li>
+                                            <li>Product Design </li>
+                                        </ul></span>
                             </div>
+
+                            <script>
+                                // When the user clicks on div, open the popup
+                            function strategyPopup() {
+                              var popup = document.getElementById("strategyPopup");
+                              popup.classList.toggle("show");
+                            }
+                            </script>
+
                       </div>
 
                     </div>
@@ -104,7 +105,27 @@
                         </br>
                         <h5 class="card-title">UX Research</h5>
                         <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                          <i class="material-icons" style="font-size:48px;color:#E47957">add_circle</i>
+                          <div class="popup" onclick="reserachPopup()">
+                              <i class="material-icons" style="font-size:48px;color:#E47957">add_circle</i>
+                              <span class="popuptext" id="reserachPopup">
+                                  <p style="font-weight:bold; text-align: center;">Services</p>
+                                        <ul>
+                                            <li>Web Design </li>
+                                            <li>Android and IOS app design </li>
+                                            <li>Prototyping </li>
+                                            <li>Interaction Design </li>
+                                            <li>Product Design </li>
+                                        </ul></span>
+
+                                    <script>
+                                        // When the user clicks on div, open the popup
+                                    function reserachPopup() {
+                                      var popup = document.getElementById("reserachPopup");
+                                      popup.classList.toggle("show");
+                                    }
+                                    </script>
+                            </div>
+
                       </div>
                     </div>
                   </div>
@@ -120,32 +141,60 @@
                   <div class="col-sm-4">
 
 
-                        <div class="flip-card">
-                              <div class="flip-card-inner justify-content-center">
-                                  <div class="flip-card-front">
-                                    <img id="design" class="card-img-top img-fluid " src="./static/css/ux_design.png" alt="UX Design icon">
-                                    </br>
-                                    <h4 class="card-title">User Experience Design</h4>
-                                    <p class="card-text">Using insights gathered through our research we develop the best design solutions for our clients.</p>
-                                  </div>
-                                   <div class="flip-card-back align-middle">
-                                       <p style="font-weight:bold; text-align: center;">Services</p>
+<!--                        <div class="flip-card">-->
+<!--                              <div class="flip-card-inner justify-content-center">-->
+<!--                                  <div class="flip-card-front">-->
+<!--                                    <img id="design" class="card-img-top img-fluid " src="./static/css/ux_design.png" alt="UX Design icon">-->
+<!--                                    </br>-->
+<!--                                    <h4 class="card-title">User Experience Design</h4>-->
+<!--                                    <p class="card-text">Using insights gathered through our research we develop the best design solutions for our clients.</p>-->
+<!--                                  </div>-->
+<!--                                   <div class="flip-card-back align-middle">-->
+<!--                                       <p style="font-weight:bold; text-align: center;">Services</p>-->
+<!--                                        <ul>-->
+<!--                                            <li>Web Design </li>-->
+<!--                                            <li>Android and IOS app design </li>-->
+<!--                                            <li>Prototyping </li>-->
+<!--                                            <li>Interaction Design </li>-->
+<!--                                            <li>Product Design </li>-->
+<!--                                        </ul>-->
+<!--                                    </div>-->
+<!--                              </div>-->
+<!--                        </div>-->
+
+
+<!--                  </div>-->
+                    <div class="card">
+                      <div class="card-body">
+                        <img id="uxDesign" class="card-img-top img-fluid " src="./static/css/ux_design.png" alt="UX Design icon">
+                        </br>
+                        <h5 class="card-title">User Experience Design</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                          <div class="popup" onclick="designPopup()">
+                              <i class="material-icons" style="font-size:48px;color:#E47957">add_circle</i>
+                              <span class="popuptext" id="designPopup">
+                                  <p style="font-weight:bold; text-align: center;">Services</p>
                                         <ul>
                                             <li>Web Design </li>
                                             <li>Android and IOS app design </li>
                                             <li>Prototyping </li>
                                             <li>Interaction Design </li>
                                             <li>Product Design </li>
-                                        </ul>
-                                    </div>
-                              </div>
-                        </div>
+                                        </ul></span>
 
+                                    <script>
+                                        // When the user clicks on div, open the popup
+                                    function designPopup() {
+                                      var popup = document.getElementById("designPopup");
+                                      popup.classList.toggle("show");
+                                    }
+                                    </script>
+                            </div>
+
+                      </div>
+                    </div>
 
                   </div>
-
-
-
                   <div class="col-sm-4">
                     <div class="card">
                       <div class="card-body">
@@ -153,7 +202,26 @@
                         </br>
                         <h5 class="card-title">Branding</h5>
                         <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                        <i class="material-icons" style="font-size:48px;color:#E47957">add_circle</i>
+                       <div class="popup" onclick="brandingPopup()">
+                              <i class="material-icons" style="font-size:48px;color:#E47957">add_circle</i>
+                              <span class="popuptext" id="brandingPopup">
+                                  <p style="font-weight:bold; text-align: center;">Services</p>
+                                        <ul>
+                                            <li>Web Design </li>
+                                            <li>Android and IOS app design </li>
+                                            <li>Prototyping </li>
+                                            <li>Interaction Design </li>
+                                            <li>Product Design </li>
+                                        </ul></span>
+
+                                    <script>
+                                        // When the user clicks on div, open the popup
+                                    function brandingPopup() {
+                                      var popup = document.getElementById("brandingPopup");
+                                      popup.classList.toggle("show");
+                                    }
+                                    </script>
+                            </div>
                       </div>
                     </div>
 

@@ -30,10 +30,10 @@ hr{
     text-align:center;
 }
 
-#one, #three, #four, #five{
+#one, #two, #three, #four, #five, #six{
     font-size: 500%;
     font-family: 'Playfair Display', sans-serif;
-    text-align:right;
+    text-align:center;
     padding-right:10%;
 }
 
@@ -42,17 +42,17 @@ hr{
     width: 60%;
 
 }
-
-#two {
-    font-size: 500%;
-    font-family: 'Playfair Display', sans-serif;
-    text-align: right;
-    padding-right:40%;
-
+video::-webkit-media-controls {
+  display:none !important;
 }
 
-#pillar1,{
+
+
+
+#pillar1, #pillar2, #pillar3, #pillar4, #pillar5, #pillar6{
     padding-top:2%;
+    text-justify: inter-word;
+    text-align: justify;
 }
 
 .card{
@@ -63,17 +63,31 @@ hr{
 
 
 hr.line {
-  border: 3px solid #E47957;
+  border: 2px solid #E47957;
   width: 10%;
   margin-top: 2%;
-  margin-bottom: 2%;
-  margin-left: 50%;
+  margin-bottom: 3%;
+  margin-left: 45%;
   margin-right:50%;
 }
 
 #teamMembers {
     margin-left: 20%;
 }
+
+#description{
+
+    padding-left:10%;
+    padding-right:10%;
+    padding-bottom: 5%;
+}
+
+#empathy, #intentionality, #passion{
+    padding-top: 5%;
+
+
+}
+
 
 
 

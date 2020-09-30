@@ -20,20 +20,11 @@
 {% include "base.html" %}
 <body>
 
+        <video style="width:100%;"  controls autoplay="autoplay" loop>
+            <source src="{% static 'media/coreValues.mp4' type='video/mp4' %}">
+            Your browser does not support the video tag.
+        </video>
 
-
-
-<!--<div class="embed-responsive embed-responsive-16by9">-->
-<!--  <iframe class="embed-responsive-item" src="https://youtu.be/NFpRni8op_8" allowfullscreen></iframe>-->
-<!--</div>-->
-
-<!--<video controls>-->
-<!--<source src="https://youtu.be/NFpRni8op_8' type='video/mp4' %}">-->
-<!--Your browser does not support the video tag.-->
-<!--</video>-->
-        <div id="video" class="container-fluid">
-
-        </div>
 
         <div id="ourTeam" class="container-fluid">
 
@@ -43,11 +34,12 @@
 
 
                     <hr class="line">
-                    <h2 id="ourVisionaryTeam">
-                        Our Visionary Team
+                    <h2 style="text-align:center;padding-bottom:5%;">
+                         Visionary Team
                     </h2>
 
-                     <p >Technology is ever changing and so are the people that use it.
+                    <div id="description">
+                                        <p >Technology is ever changing and so are the people that use it.
                          With the great shift in our society’s values and priorities, Illum finds itself on the precipice of change.
                          Taking a different approach to technology design, Illum consults companies of all sizes to create products and services that extend to all races, genders, ethnicities, classes, ages, and all other identities.</p>
 
@@ -59,12 +51,9 @@
                         We are taking a different approach to things.
                         Illum consults companies of all sizes to create products and services that extend to all races, genders, ethnicities, classes, ages, and all other identities.</p>
 
-                    <ul>Our Audience
-                        <li>Medium-sized technology companies that do not currently allocate their resources to culturally sensitive (etc.) research for creating various content/products/services </li>
-                        <li>Small businesses looking to enhance their technical capabilities.</li>
-                        <li>Established companies searching for leading-edge designs </li>
-                        <li>PR firms that work with companies that need help</li>
-                     </ul>
+                    </div>
+
+
 
                 </div>
 
@@ -83,46 +72,108 @@
 
         </div>
 
-        <div class="container-fluid justify-content-center">
+        <div class="container-fluid" style="padding-left:8%;padding-right:8%;">
 
             <div id="pillarsTitle">
                 <hr class="line">
-                <h2>Our Pillars</h2>
+                <h2 style="text-align:center;padding-bottom:5%;">Our Pillars</h2>
             </div>
 
             <div class="row no-gutters" id=intersectionality">
-                <div id="number" class="col-6 col-md-4">
-                    <h3 id="one" style="text-align:left;">1</h3>
+                <div id="number" class="col-2 col-md-1">
+                    <h3 id="one" style="text-align:center;">1</h3>
                 </div>
-                 <div id="pillar1" class="col-12 col-md-8" style="text-align:left;width:90%;">
-                     <h5>Intersectionality</h5>
-                <h6>Wait! What is intersectionality? </h6>
-                <p>Intersectionality is a theoretical framework that carefully examines the complex nature of related and interdependent social groupings such as race, gender, class, sexual orientation, and religion.
-                    Through understanding the nature of people’s overlapping identities and experiences we are able to understand the complexity of prejudices they face.</p>
+                 <div id="pillar1" class="col-12 col-md-7" style="width:90%; margin-bottom:3%;">
+                     <h4 style="padding-bottom:2%;">Intersectionality</h4>
+                    <h6>Wait! What is intersectionality? </h6>
+                    <p>Intersectionality is a theoretical framework that carefully examines the complex nature of related
+                        and interdependent social groupings such as race, gender, class, sexual orientation, and religion.
+                        Through understanding the nature of people’s overlapping identities and experiences we are able to
+                        understand the complexity of prejudices they face.</p>
 
-                <h6>Soo…. What does that have to do with technology? </h6>
+                    <h6>Soo…. What does that have to do with technology? </h6>
 
-                <p>Technology is often created in the reflection of its users. However, many research studies show that users within marginalized groups are often overlooked or ignored during the design process.
-                By taking an intersectional design approach, we help companies reach marginalized users that are traditionally neglected by conventional design practices prompting designers to carefully examine and eliminate their own biases.</p>
+                    <p>Technology is often created in the reflection of its users. However, many research studies show that
+                        users within marginalized groups are often overlooked or ignored during the design process.
+                    By taking an intersectional design approach, we help companies reach marginalized users that are
+                        traditionally neglected by conventional design practices prompting designers to carefully examine
+                        and eliminate their own biases.</p>
                  </div>
             </div>
 
 
-            <div class="row no-gutters" id="empathy">
+            <div class="row no-gutters justify-content-end" id="empathy">
 
-                 <div id="pillar2" class="col">
-                <h5>Empathy</h5>
-                <p>Empathy— one of the most important traits humans have the ability to demonstrate, is what guides us through each step of our design process.
+                 <div id="pillar2" style="margin-bottom:3%;" class="col-12 col-md-7">
+                <h4 style="padding-bottom:2%;text-align:right;">Empathy</h4>
+                <p style="text-align:right;">Empathy— one of the most important traits humans have the ability to demonstrate, is what guides us
+                    through each step of our design process.
                     One of our biggest advantages is our ability to understand and share another person's experiences and emotions.
-                    Our personal experiences and backgrounds position us to be able to empathize with marginalized communities often forgotten and left behind by technology pushing us to work towards creating technology that successfully uplifts their needs and wants.
+                    Our personal experiences and backgrounds position us to be able to empathize with marginalized
+                    communities often forgotten and left behind by technology pushing us to work towards creating
+                    technology that successfully uplifts their needs and wants.
                 </p>
                  </div>
-                 <div class="col">
+                 <div class="col-2 col-md-1">
                     <h3 id="two">2</h3>
                  </div>
 
+            </div>
+
+
+             <div class="row no-gutters" id=intentionality">
+                <div class="col-2 col-md-1">
+                    <h3 id="three" style="text-align:center;">3</h3>
+                </div>
+                 <div id="pillar3" class="col-12 col-md-7" style="margin-bottom:3%; width:90%;">
+                     <h4 style="padding-bottom:2%;">Intentionality</h4>
+                    <p>Our designs affect many and we want to ensure that all persons feel accurately represented.
+                        As a result, we are intentional throughout our design process, ensuring the user’s diverse set
+                        of needs are considered at every step.</p>
+                 </div>
+            </div>
+
+
+            <div class="row no-gutters justify-content-end" id="disruptiveInnovation">
+
+                 <div id="pillar4" class="col-12 col-md-7" style="margin-bottom:3%;">
+                <h4 style="padding-bottom:2%;text-align:right;">Disruptive Innovation</h4>
+                <p>We want to shake the room! We are a team of trained and highly skilled designers, researchers,
+                    engineers, and technologists constantly working to drive innovation at the individual, team and organizational levels.
+                </p>
+                 </div>
+                 <div class="col-2 col-md-1">
+                    <h3 id="four"style="text-align:center;">4</h3>
+                 </div>
 
             </div>
+
+            <div class="row no-gutters" id=integrity">
+                <div class="col-2 col-md-1">
+                    <h3 id="five">5</h3>
+                </div>
+                 <div id="pillar5" class="col-12 col-md-7" style="width:90%;margin-bottom:3%;">
+                     <h4 style="padding-bottom:2%;">Intentionality</h4>
+                    <p>We promote a culture of integrity and take great pride in all of the work we do.</p>
+                 </div>
+            </div>
+
+            <div class="row no-gutters justify-content-end" id="c">
+
+                 <div id="pillar6" class="col-12 col-md-7" style="margin-bottom:3%;">
+                <h4 style="padding-bottom:2%;text-align:right;">Passion</h4>
+                <p>We care!! Intersectional design is an emerging field that is often overlooked. This means that many
+                    disenfranchised groups are not afforded the same technical opportunities as privileged groups.
+                    Our passion is rooted in our compassion and desire for people of all backgrounds to have ample access
+                    to technology as well as the opportunities and social mobility that access affords.
+                </p>
+                 </div>
+                 <div class="col-2 col-md-1">
+                    <h4 id="six" ]>6</h4>
+                 </div>
+
+            </div>
+
 
 
         </div>

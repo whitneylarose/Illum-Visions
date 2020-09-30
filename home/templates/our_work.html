@@ -42,7 +42,7 @@
 
     <div id="projects" class="container-fluid">
 
-        <div class="row">
+        <div id="bocoblockparty" class="row">
             <div class="col" style="padding-left:5%;">
                 <img id="bocologo" src="./static/media/boco-logo.png" class="img-responsive img-fluid" alt="the blackOUT blockparty logo">
             </div>
@@ -51,6 +51,30 @@
                 <p>We teamed up with the blackOUT party up to present the first annual blackOUT block party. While carefully
                 examining their exisiting resources and target-audience we helped to prepare both a in-person covid-safe
                 experience and a virtaul show.</p>
+            </div>
+        </div>
+
+        <div id="quickSip" class="row">
+            <div id="qsDescription" class="col" style="padding-left:5%;">
+                <a href="{% url 'quicksip' %}"><h3 style="padding-bottom:5%;">QuickSip</h3></a>
+                <p>QuickSip for merchants allows staff to manage and track orders at bars by providing real-time updates via the app.
+                    QuickSip for consumers expedites the ordering process by allowing users to order via mobile app reducing wait time spent in long bar lines.</p>
+            </div>
+            <div class="col">
+                <img id="qsLogo" src="./static/media/qsLogo.png" class="img-responsive img-fluid" alt="Quick Sip logo">
+
+            </div>
+        </div>
+
+        <div id="listServe" class="row">
+            <div class="col" style="padding-left:5%;">
+                <img id="bocologo" src="./static/media/boco-logo.png" class="img-responsive img-fluid" alt="AAPHD listserv logo">
+            </div>
+            <div id="bocoDescription" class="col">
+                <a href="{% url 'the_blackout_block_party' %}"><h3 style="padding-bottom:5%;">African American PhDs in Computer Science Listserv</h3></a>
+                <p>Along with Morehouse College, we explored the effictiveness of the only online space dedicated to
+                African-American phD students, a listserv. Our qualitative findings led to several insights and recommendations
+                aimed to improve the effects it has on computing identity as a marginalized person</p>
             </div>
         </div>
 

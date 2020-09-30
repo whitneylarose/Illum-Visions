@@ -13,3 +13,6 @@ def about(request):
 
 def the_blackout_block_party(request):
     return render(request, 'the_blackout_block_party.html', {})
+
+def quicksip(request):
+    return render(request, 'quicksip.html', {})
