@@ -20,11 +20,106 @@
 	<body>
 	{% include "base.html" %}
 
-    <h1>Hello</h1>
+     <div id="theblockparty" class="container-fluid">
+
+
+        <hr class="line">
+        <h2 style="text-align:center;padding-bottom:5%;">
+             the blackOUT blockparty
+        </h2>
+
+
+     </div>
+
+    <div id="problemspace" class="container-fluid">
+
+        <h4>Problem Space</h4>
+        <p>the blackOUT company is a media theatre company in Atlanta that provides a safe space for black and queer
+            upcoming artist like their most recent event, the 1st annual blackOUT block party. The block party was a
+            covid-safe drive-in performance and charity event that could be viewed either virtually or in-person.
+            While the safety of the artist was secured by having a pre-recorded show, they still required safety measures
+            for ordering food and merchandise from vendors. We partnered with the blackOUT company to develop low-cost
+            and free solutions to scale their ticket and merchandise purchases, host the virtual performance, ensure the
+            safety of all parties involved. </p>
+
+        <h4>Strategy</h4>
+        <p>Illum recognizes that many upcoming businesses have limited resources and cannot afford traditional methods
+            for online stores and ticketing. We chose to prioritize this measure while brainstorming solutions.
+            We developed several free and existing alternatives that would help aid in sales and marketing.  </p>
+
+        <h4>Time Constraint</h4>
+        <p>2 Weeks  </p>
+
+    </div>
+
+
+    <div id="solution" class="container-fluid bg-black">
+
+        <div class="row" id="eventbrite">
+
+            <div class="col-4 col-md-4">
+                <h4>Tools</h4>
+            </div>
+             <div class="col-12 col-md-7" style="width:90%; margin-bottom:3%;">
+               <h4>Solutions</h4>
+             </div>
+
+
+              <div id="elogo" class="col-4 col-md-4">
+                  <img src="./static/media/eventbrite.png" class="img-responsive" alt="Eventbrite logo">
+              </div>
+             <div id="ticketsales" class="col-12 col-md-7" style="width:90%; margin-bottom:3%;">
+                <h6>Increasing ticket sales through Eventbrite </h6>
+                <p>The blackOUT company typically relies on ticket sales via walk-up and social media marketing.
+                    By introducing them to eventbrite, they were able to sell out all in-person tickets.</p>
+             </div>
+
+
+            <div id="splashlogo" class="col-4 col-md-4">
+                  <img src="./static/media/splash.png" class="img-responsive" alt="Eventbrite logo">
+              </div>
+             <div id="vendors" class="col-12 col-md-7" style="width:90%; margin-bottom:3%;">
+                <h6>Improving Vendor Engagement via Splashthat  </h6>
+                <p>We then used Splashthat to host information about the event for vendors. This resulted in a 10%
+                    increase with vendor engagement. </p>
+             </div>
+
+
+            <div id="jotformlogo" class="col-4 col-md-4">
+                  <img src="./static/media/jotform.png" class="img-responsive" alt="Eventbrite logo">
+              </div>
+             <div id="ordering" class="col-12 col-md-7" style="width:90%; margin-bottom:3%;">
+                <h6>JotForm for Online Ordering</h6>
+                <p>Traditional online stores require a small transaction percentage. As an alternative, we decided to
+                    host all vendor menus on the jotform and create order forms to purchase merchandise and food.
+                    Once a customer submitted the request, it would be sent to “runners” who delivered their orders to
+                    their car and received payment significantly reducing the number of interactions amongst people.
+                    Roughly 15% of their profits were acquired from vendors. Also, 20% of vendors sold out of their
+                    products without ever having to be in contact with a customer.  </p>
+             </div>
+            </div>
+
+            <center>
+                <input class="btn" id="gitButton" type="button" onclick="ourWork()"  value="Explore Other Projects">
+            </center>
+
+
+
+        <script>
+            function ourWork()
+            {
+                 location.href = "{% url 'our_work' %}";
+            }
+    </script>
+    </div>
+
 
 
 	</body>
 
+{% include "base.html" %}
+    <footer>
 
+    </footer>
 
 </html>

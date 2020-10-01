@@ -16,3 +16,6 @@ def the_blackout_block_party(request):
 
 def quicksip(request):
     return render(request, 'quicksip.html', {})
+
+def aaphdcs(request):
+    return render(request, 'aaphdcs.html', {})

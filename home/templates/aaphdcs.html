@@ -1,0 +1,103 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Illum Visions</title>
+
+    <!--Bootsrap 4 CDN-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!--Fontawesome CDN-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+          integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <!--link rel="stylesheet" href="{% static '/css/ourwork.css' %}"-->
+	<link rel="stylesheet" href="{%static 'css/aaphdcs.css' %}">
+
+</head>
+	<body>
+	{% include "base.html" %}
+
+     <div id="aaphdcs" class="container-fluid">
+
+
+        <hr class="line">
+        <h2 style="text-align:center;padding-bottom:5%;">
+             Qualitative Investigation for the African American PhDs in Computer Science Listserv
+        </h2>
+
+
+     </div>
+
+    <div id="problemspace" class="container-fluid">
+
+        <h4>Problem Space</h4>
+        <p> The demand for diverse computing careers increases, yet African Americans continue to participate and succeed
+            in computing fields proportionately less than their White and Asian counterparts. An individual's computing
+            identity can influence their performance and willingness to participate. The African American PhDs in Computer
+            Science Listserv is an email listserv created to increase and maintain members' sense of belonging, self-efficacy,
+            and resilience in computing. It is also the only online space for African American pHd computer scientist
+            and has several outstanding user experience issues.</p>
+    </div>
+
+
+    <div id="solution" class="container-fluid bg-black">
+
+
+        <h4>Research Strategy</h4>
+        <p> Interested participants were sent an online survey consisting of two sections: 1)
+            demographics and a 2) user experience assessment.Twenty-one users of the African American PhDs in Computer
+            Science (AAPHDCS) email list participated in this user experience study.</p>
+
+        <h4>Major Fidings</h4>
+        <p> Though entry and exposure to the mailing list varied, very few described their rationale for joining was
+            due to challenges to mitigate low sense of belonging or increase self-efficacy and resilience</p>
+            <p> During the interviews, pre-professionals reported having minimal interactions with the listserv. Most
+                individuals had passive interactions with the listserv and either rarely or never posted</p>
+        <p> AAPHDCS, according to its members, is an attractive mailing list with goal-directed quality. However, the
+            non-goal directed hedonic quality aspects (stimulation and novelty) presented more neutral findings.</p>
+
+        <h4>Synethesis</h4>
+        <p> AAPHDCS, according
+            to its members, is an attractive mailing list with goal-directed
+            quality. However, the non-goal directed hedonic quality
+            aspects (stimulation and novelty) presented more neutral
+            findings. A few participants suggested other chat services such
+            as Slack or even producing an app just for AAPHDCS to
+            allow for better control over information visibility and
+            interaction.</p>
+            <p>Our results suggest that African American
+            computing identity can be effectively maintained by
+            establishing a perceived sense of community belongingness,
+            enabling optimistic outlooks and facilitating self-efficacy.
+            These factors often converge and are contingent on the
+            environment but can be used to build an effective model of
+            resilience.</p>
+
+
+
+        <input class="btn" id="gitButton" style="display: block; " type="button" onclick="ourWork()"  value="Explore Other Projects">
+
+
+        <script>
+            function ourWork()
+            {
+                 location.href = "{% url 'our_work' %}";
+            }
+         </script>
+
+    </div>
+
+
+
+
+	</body>
+
+{% include "base.html" %}
+    <footer>
+
+    </footer>
+
+</html>

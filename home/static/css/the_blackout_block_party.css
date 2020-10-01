@@ -1,0 +1,79 @@
+
+hr.line {
+  border: 2px solid #E47957;
+  width: 10%;
+  margin-top: 2%;
+  margin-bottom: 3%;
+  margin-left: 45%;
+  margin-right:50%;
+}
+
+
+
+#theblockparty
+{
+    padding-top: 3%;
+    background-color:#F4E8DC;
+    height: auto;
+    padding-bottom:1%;
+}
+
+
+#problemspace{
+
+    padding-left: 15%;
+    padding-top: 5%;
+    padding-right: 15%;
+
+}
+
+
+h4{
+    padding-bottom: 2%;
+
+}
+
+p{
+    padding-bottom: 3%;
+
+}
+
+#solution {
+    background-color: black;
+    color: white;
+    height: auto;
+    width: 100%;
+    padding-top: 10%;
+    padding-left: 10%;
+    padding-bottom:10%;
+
+
+}
+
+h6{
+    padding-bottom: 4%;
+
+}
+.img-responsive{
+
+    width: 400px;
+    height: 200px;
+}
+
+#gitButton{
+    color: white;
+    background-color: #E47957;
+    font-size: 20px;
+    font-style: normal;
+	font-weight: normal;
+	font-family: Poppins;
+	padding: 8px 30px;
+	justify-content: center;
+	text-align: center;
+	padding-top: 10px;
+	margin-top:2%;
+	height:auto;
+	width: auto;
+	position: absolute;
+	border-radius: 0;
+}
