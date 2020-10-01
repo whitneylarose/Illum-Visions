@@ -1,8 +1,12 @@
-
 nav .navbar-nav li a{
   color: rgba(0,0,0,.5);
 
-  }
+}
+
+nav .navbar-nav > .active > a {
+      color: #804123;
+        font-weight: bold;
+}
 
 nav{
     background: white;
@@ -31,8 +35,8 @@ nav{
 }
 
 #menuItems a:hover {
-  color: #804123;
-  font-weight: bold;
+  text-decoration: underline;
+
 }
 
 .btn:focus {
@@ -49,16 +53,13 @@ nav{
   background: #F4E8DC;
   color: black;
   float: right;
-  margin-right: 10px;
+  padding-right: 2%;
 
 }
 .fa {
-  padding: 0.5%;
+
   text-align: center;
   text-decoration: none;
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
 
 }
 
@@ -71,4 +72,5 @@ footer{
     height: 5%;
     bottom: 0;
     background-color: #F4E8DC;
+
 }

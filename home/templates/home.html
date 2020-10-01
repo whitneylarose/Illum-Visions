@@ -25,42 +25,18 @@
 {% include "base.html" %}
 
     <body>
-
-            <video style="width:100%;" autoplay="autoplay" loop>
+            <video style="width:100%;" autoplay="autoplay"  muted loop>
             <source src="{% static 'media/coreValues.mp4' type='video/mp4' %}">
             Your browser does not support the video tag.
             </video>
 
-<!--        <div id="socialtransformation" class="row container-fluid justify-content-center">-->
-
-<!--            <div class="container-fluid" id="intro">-->
-
-<!--                <div id="social">-->
-<!--                  <h1 class="sentence">Social-->
-<!--                    <div class="slidingHorizontal">-->
-<!--                      <span>transformation.</span>-->
-<!--                      <span>advancement.</span>-->
-<!--                      <span>evolution.</span>-->
-<!--                      <span>development.</span>-->
-<!--                    </div>-->
-<!--                  </h1>-->
-<!--                </div>-->
-
-
-<!--                <h3 id="tagLine">-->
-<!--                    Increasing the impact of technology through intersectional design thinking-->
-<!--                </h3>-->
-
-<!--            </div>-->
-
-<!--        </div>-->
 
 
         <div id="whatwedo" class="row container-fluid">
 
              </br>
 
-                <div id="wwd_content" class="container">
+                <div id="wwd_content" class="container-fluid">
 
                     <hr class="line">
                     <h2>
@@ -239,19 +215,20 @@
                  We would love to work with you!
             </h1>
 
-        <form class="justify-content-center" id="contactInfo" action=”mailto:illumvisions@gmail.com” method=”post” enctype=”multipart/form-data” name=”EmailForm”>
+        <form action="mailto:illumvisions@gmail.com" enctype="text/plain" lass="justify-content-center" id="contactInfo" method=”post”>
+
           <div class="form-row">
             <div class="form-group col-md-6">
-              <input type="name" class="w3-input form-control border border-top-0 border-right-0 border-left-0" id="name" placeholder="Your name (required)">
+              <input type="text" name="name" class="w3-input form-control border border-top-0 border-right-0 border-left-0" id="name" placeholder="Your name (required)">
             </div>
             <div class="form-group col-md-6">
-              <input type="email" class="form-control border border-top-0 border-right-0 border-left-0" id="email" placeholder="Your email (required)">
+              <input type="email" name="email" class="form-control border border-top-0 border-right-0 border-left-0" id="email" placeholder="Your email (required)">
             </div>
           </div>
           <div class="form-group">
-            <textarea class="form-control border border-top-0 border-right-0 border-left-0" id="message" placeholder="Your message"></textarea>
+            <textarea type="text" name="message" class="form-control border border-top-0 border-right-0 border-left-0" id="message" placeholder="Your message"></textarea>
           </div>
-            <div class="d-flex justify-content-center">
+            <div class="form-actions d-flex justify-content-center ">
             <input class="btn btn-default" id="gitButton" type="submit" value="Get in Touch">
         </div>
         </form>

@@ -57,6 +57,11 @@
          location.href = "{% url 'home' %}#getintouch";
     }
 
+       $(document).ready(function() {
+          $('li.active').removeClass('active');
+          $('a[href="' + location.pathname + '"]').closest('li').addClass('active');
+        });
+
 
     </script>
 
@@ -72,11 +77,11 @@
 
   <!-- Copyright -->
   <div class="footer-copyright text-center py-3">© 2020 Copyright:
-    <a href="https://illumvisions.com/"> Illum Visions</a>
-      <a href="#" class="fa fa-facebook"></a>
-            <a href="#" class="fa fa-twitter"></a>
-            <a href="#" class="fa fa-instagram"></a>
-            <a href="#" class="fa fa-linkedin"></a>
+    <a target="_blank" href="https://www.illumvisions.com/"> Illum Visions</a>
+      <a href="https://www.facebook.com/illumvisions1" target="_blank" class="fa fa-facebook"></a>
+            <a href="https://twitter.com/illumvisions" target="_blank" class="fa fa-twitter"></a>
+            <a href="https://www.instagram.com/illumvisions/?igshid=14rnkzxxekv5k" target="_blank" class="fa fa-instagram"></a>
+            <a href="https://www.linkedin.com/company/illumvisions" target="_blank"class="fa fa-linkedin"></a>
   </div>
 
 

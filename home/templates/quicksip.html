@@ -17,8 +17,8 @@
 	<link rel="stylesheet" href="{%static 'css/quicksip.css' %}">
 
 </head>
+{% include "base.html" %}
 	<body>
-	{% include "base.html" %}
 
      <div id="quicksip" class="container-fluid">
 
@@ -57,7 +57,7 @@
             by design a mobile application that allows real-time ordering functions that appear on a shared iPad for bartenders.
             The mobile applications also enforces automated tips ensuring waiters are being accurately compensated.</p>
 
-        <img src="./static/media/merchants.png" style="width: 800px;height: 300px;padding-bottom:5%; " class="img-responsive" alt="">
+        <img id="merchants" src="./static/media/merchants.png" height="300px" width="800px" style="padding-bottom:5%; " class="img-responsive img-fluid" alt="">
 
          <p>In additon, the application offers automated user age verification, detailed view of the menus, order tracking features, and
              aimed to reduce wait time. </p>

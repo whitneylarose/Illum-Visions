@@ -1,8 +1,8 @@
 #pagetitle{
-
     font-size:3vw;
     text-align: center;
     padding-top: 2%;
+    padding-bottom: 1%;
 }
 
 
@@ -13,13 +13,23 @@ hr.line {
   margin-left:45%;
 }
 
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
 #bio{
 
 	text-align: center;
 	font-size:1.5vw;
-	padding-top:3%;
 	padding-left:20%;
 	padding-right:20%;
+	text-align: justify;
+    text-justify: inter-word;
 }
 
 a{
