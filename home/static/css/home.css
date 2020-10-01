@@ -103,7 +103,6 @@ body {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
   width: 90%;
-
   margin-bottom: 2%;
   transition: 0.3s;
   transform-style: preserve-3d;
@@ -215,12 +214,24 @@ width:250px;
 	width: 191px;
 	position: absolute;
 	border-radius: 0;
-}
+	padding-bottom: 10%;
+	margin: 0;
+
+	}
 
 input[type=text]{
     border-bottom: 5px solid red;
 }
 
+}
+video::-webkit-media-controls {
+  display:none !important;
+}
+#video{
+  background-color: white;
+  height: 300px;
+  max-width:100%;
+}
 
 .fade {
     opacity: 0;
@@ -374,8 +385,6 @@ input[type=text]{
 
 
 
-
-
 /* Popup container - can be anything you want */
 .popup {
   position: relative;
@@ -405,10 +414,14 @@ input[type=text]{
 
 }
 ul {
-  list-style-type: none;
+  list-style-type: disc;
   margin: 10px;
   padding: 10px;
   font-size:1vw;
+}
+
+li{
+    padding-bottom:2%;
 }
 
 /* Popup arrow */

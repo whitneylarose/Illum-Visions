@@ -26,29 +26,34 @@
 
     <body>
 
-        <div id="socialtransformation" class="row container-fluid justify-content-center">
+            <video style="width:100%;" autoplay="autoplay" loop>
+            <source src="{% static 'media/coreValues.mp4' type='video/mp4' %}">
+            Your browser does not support the video tag.
+            </video>
 
-            <div class="container-fluid" id="intro">
+<!--        <div id="socialtransformation" class="row container-fluid justify-content-center">-->
 
-                <div id="social">
-                  <h1 class="sentence">Social
-                    <div class="slidingHorizontal">
-                      <span>transformation.</span>
-                      <span>advancement.</span>
-                      <span>evolution.</span>
-                      <span>development.</span>
-                    </div>
-                  </h1>
-                </div>
+<!--            <div class="container-fluid" id="intro">-->
+
+<!--                <div id="social">-->
+<!--                  <h1 class="sentence">Social-->
+<!--                    <div class="slidingHorizontal">-->
+<!--                      <span>transformation.</span>-->
+<!--                      <span>advancement.</span>-->
+<!--                      <span>evolution.</span>-->
+<!--                      <span>development.</span>-->
+<!--                    </div>-->
+<!--                  </h1>-->
+<!--                </div>-->
 
 
-                <h3 id="tagLine">
-                    Increasing the impact of technology through intersectional design thinking
-                </h3>
+<!--                <h3 id="tagLine">-->
+<!--                    Increasing the impact of technology through intersectional design thinking-->
+<!--                </h3>-->
 
-            </div>
+<!--            </div>-->
 
-        </div>
+<!--        </div>-->
 
 
         <div id="whatwedo" class="row container-fluid">
@@ -71,18 +76,22 @@
                           <img id="strategy" class="card-img-top img-fluid" src="./static/css/strategy.png" alt="UX Strategy icon">
                           </br>
                               <h5 class="card-title">UX Strategy</h5>
-                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                            <p class="card-text"><ul>
+                                            <li>Business Strategy</li>
+                                            <li>Value Innovation </li>
+                                            <li>Purpose Guidance </li>
+                                            <li>Usability Testing</li>
+                                            <li>Scale Expansion</li>
+                                        </ul> </p>
                           <div class="popup" onclick="strategyPopup()">
                               <i class="material-icons" style="font-size:48px;color:#E47957">add_circle</i>
                               <span class="popuptext" id="strategyPopup">
                                   <p style="font-weight:bold; text-align: center;">Services</p>
-                                        <ul>
-                                            <li>Web Design </li>
-                                            <li>Android and IOS app design </li>
-                                            <li>Prototyping </li>
-                                            <li>Interaction Design </li>
-                                            <li>Product Design </li>
-                                        </ul></span>
+                                  <p>We strategically develop requirements and resources for the creation
+                                and release of digital products. Centering intentionality throughout our planning, we
+                                ensure that the business vision, user needs, and technical capabilities are aligned with
+                                your goals and extend varying needs of different user types.</p>
+                                        </span>
                             </div>
 
                             <script>
@@ -104,18 +113,21 @@
                         <img id="uxResearch" class="card-img-top img-fluid " src="./static/css/ux_research.png" alt="UX Research icon">
                         </br>
                         <h5 class="card-title">UX Research</h5>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <p class="card-text"><ul>
+                                            <li>Stakeholder Evaluations</li>
+                                            <li>Problem Space Definition</li>
+                                            <li>User Analysis  </li>
+                                            <li>Requirements Gathering</li>
+                                            <br>
+                                        </ul></p>
                           <div class="popup" onclick="reserachPopup()">
                               <i class="material-icons" style="font-size:48px;color:#E47957">add_circle</i>
                               <span class="popuptext" id="reserachPopup">
                                   <p style="font-weight:bold; text-align: center;">Services</p>
-                                        <ul>
-                                            <li>Web Design </li>
-                                            <li>Android and IOS app design </li>
-                                            <li>Prototyping </li>
-                                            <li>Interaction Design </li>
-                                            <li>Product Design </li>
-                                        </ul></span>
+                                  <p>We conduct extensive user research with an emphasis on engaging underrepresented
+                                      populations and highlighting various use cases related to their layered experiences.
+                                  </p>
+                                        </span>
 
                                     <script>
                                         // When the user clicks on div, open the popup
@@ -140,47 +152,27 @@
              <div id ="row2" class="row justify-content-end">
                   <div class="col-sm-4">
 
-
-<!--                        <div class="flip-card">-->
-<!--                              <div class="flip-card-inner justify-content-center">-->
-<!--                                  <div class="flip-card-front">-->
-<!--                                    <img id="design" class="card-img-top img-fluid " src="./static/css/ux_design.png" alt="UX Design icon">-->
-<!--                                    </br>-->
-<!--                                    <h4 class="card-title">User Experience Design</h4>-->
-<!--                                    <p class="card-text">Using insights gathered through our research we develop the best design solutions for our clients.</p>-->
-<!--                                  </div>-->
-<!--                                   <div class="flip-card-back align-middle">-->
-<!--                                       <p style="font-weight:bold; text-align: center;">Services</p>-->
-<!--                                        <ul>-->
-<!--                                            <li>Web Design </li>-->
-<!--                                            <li>Android and IOS app design </li>-->
-<!--                                            <li>Prototyping </li>-->
-<!--                                            <li>Interaction Design </li>-->
-<!--                                            <li>Product Design </li>-->
-<!--                                        </ul>-->
-<!--                                    </div>-->
-<!--                              </div>-->
-<!--                        </div>-->
-
-
-<!--                  </div>-->
                     <div class="card">
                       <div class="card-body">
                         <img id="uxDesign" class="card-img-top img-fluid " src="./static/css/ux_design.png" alt="UX Design icon">
                         </br>
                         <h5 class="card-title">User Experience Design</h5>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                          <div class="popup" onclick="designPopup()">
-                              <i class="material-icons" style="font-size:48px;color:#E47957">add_circle</i>
-                              <span class="popuptext" id="designPopup">
-                                  <p style="font-weight:bold; text-align: center;">Services</p>
-                                        <ul>
+                        <p class="card-text"><ul>
                                             <li>Web Design </li>
                                             <li>Android and IOS app design </li>
                                             <li>Prototyping </li>
                                             <li>Interaction Design </li>
                                             <li>Product Design </li>
-                                        </ul></span>
+                                        </ul></p>
+                          <div class="popup" onclick="designPopup()">
+                              <i class="material-icons" style="font-size:48px;color:#E47957">add_circle</i>
+                              <span class="popuptext" id="designPopup">
+                                  <p style="font-weight:bold; text-align: center;">Services</p>
+                                  <p>
+                                      Utilizing insights gathered through our research, we develop innovative design
+                                      solutions for our clients.
+                                  </p>
+                                        </span>
 
                                     <script>
                                         // When the user clicks on div, open the popup
@@ -201,18 +193,22 @@
                         <img id="branding" class="card-img-top img-fluid " src="./static/css/branding_icon.png" alt="Branding icon">
                         </br>
                         <h5 class="card-title">Branding</h5>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <p class="card-text"><ul>
+                                            <li>Visual identity branding </li>
+                                            <li>Logo design </li>
+                                            <li>Visual marketing </li>
+                                          <br>
+                                          <br>
+                                        </ul></p>
                        <div class="popup" onclick="brandingPopup()">
                               <i class="material-icons" style="font-size:48px;color:#E47957">add_circle</i>
                               <span class="popuptext" id="brandingPopup">
                                   <p style="font-weight:bold; text-align: center;">Services</p>
-                                        <ul>
-                                            <li>Web Design </li>
-                                            <li>Android and IOS app design </li>
-                                            <li>Prototyping </li>
-                                            <li>Interaction Design </li>
-                                            <li>Product Design </li>
-                                        </ul></span>
+                                  <p>
+                                      We execute strategies to solidify brand identity through deliberate design
+                                      approaches that is cohesive and relatable to a multitude of customers.
+                                  </p>
+                                        </span>
 
                                     <script>
                                         // When the user clicks on div, open the popup
@@ -232,11 +228,6 @@
              </div>
 
         </div>
-
-
-
-
-
 
 
         <div id="getintouch" class="row container-fluid">

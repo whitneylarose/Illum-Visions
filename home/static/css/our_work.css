@@ -22,6 +22,16 @@ hr.line {
 	padding-right:20%;
 }
 
+a{
+    color:black !important;
+}
+
+#d1, #d2, #d3{
+  text-align: justify;
+  text-justify: inter-word;
+
+}
+
 #ourwork{
 
   	background-color:#F4E8DC;
@@ -48,6 +58,8 @@ hr.line {
 
 #bocoblockparty, #quickSip, #listServe{
     padding-bottom: 5%;
+    padding-right: 10%;
+    padding-left: 10%;
 }
 
 
