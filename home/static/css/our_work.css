@@ -4,13 +4,30 @@
     padding-top: 2%;
     padding-bottom: 1%;
 }
+@media screen and (max-width: 600px) {
+  #pagetitle{
+   font-size:30px;
+   padding-bottom: 5%;}
+
+  }
 
 
 hr.line {
-  border: 3px solid #E47957;
+  border: 1px solid #E47957;
   width: 10%;
-  margin-bottom: 1%;
+  margin-top: 5%;
+  margin-bottom: 0%;
   margin-left:45%;
+}
+
+@media screen and (max-width: 600px) {
+  hr.line {
+    width: 20%;
+    display: block;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    margin-left:40%;
+  }
 }
 
 /* Responsive columns */
@@ -26,10 +43,17 @@ hr.line {
 
 	text-align: center;
 	font-size:1.5vw;
-	padding-left:20%;
-	padding-right:20%;
+	padding-left:15%;
+	padding-right:15%;
 	text-align: justify;
-    text-justify: inter-word;
+	font-family: 'Poppins', sans-serif;
+
+}
+
+@media screen and (max-width: 600px) {
+  #bio {
+    font-size:3vw;
+  }
 }
 
 a{
@@ -42,16 +66,41 @@ a{
 
 }
 
+
+
+
 #ourwork{
 
   	background-color:#F4E8DC;
-    height:400px;
+    height:350px;
     max-width:100%;
 }
 
-#bocologo, #qsLogo{
+@media screen and (max-width: 600px) {
+  #ourwork{
+
+  	background-color:#F4E8DC;
+    height:300px;
+    max-width:100%;}
+
+  }
+
+#bocologo, #qsLogo #aaphdLogo{
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
+
+@media screen and (max-width: 600px) {
+  #bocologo, #qsLogo #aaphdLogo{
+  	padding-bottom: 2%;
+    width:  200px;
+    height: 100px;
+    object-fit: cover;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  	}
+
+  }
 
 
 
@@ -60,17 +109,59 @@ a{
     padding-bottom: 5%;
 }
 
-#bocoDescription, #qsDescription{
+#bocoDescription, #qsDescription #aaphdDescription{
 
     padding-right: 10%;
     padding-left:5%;
+    font-family: 'Poppins', sans-serif;
 }
 
-#bocoblockparty, #quickSip, #listServe{
+@media screen and (max-width: 600px) {
+  #bocoDescription, #qsDescription #aaphdDescription{
+  	font-size: 10px;}
+
+  }
+h3{
+font-size: 20px;
+}
+
+
+ @media screen and (max-width: 600px) {
+  h3{
+  	font-size: 10px;}
+
+  }
+
+
+#bocoblockparty, #quickSip, #aaphdDescription{
     padding-bottom: 5%;
     padding-right: 10%;
     padding-left: 10%;
+    font-family: 'Poppins', sans-serif;
 }
+
+.column {
+  float: left;
+
+
+}
+.left {
+  width: 30%;
+}
+
+.right {
+  width: 70%;
+
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
 
 
 

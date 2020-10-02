@@ -15,6 +15,7 @@
 
     <link rel="stylesheet" href="{% static '/css/about.css' %}">
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Playfair+Display" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet">
 
 
 </head>
@@ -24,14 +25,13 @@
         <div id="socialtransformation" class="row container-fluid justify-content-center">
 
             <div class="container-fluid" id="intro">
-
                 <div id="social">
                   <h1 class="sentence">Social
                     <div class="slidingHorizontal">
-                      <span>transformation.</span>
-                      <span>advancement.</span>
-                      <span>evolution.</span>
-                      <span>development.</span>
+                      <span style=" color:#E7B896; ">transformation.</span>
+                      <span style="color:#AF7136">advancement.</span>
+                      <span style="color:#804123">evolution.</span>
+                      <span style="color:#4B0B0D">development.</span>
                     </div>
                   </h1>
                 </div>
@@ -45,7 +45,6 @@
 
         </div>
 
-
         <div id="ourTeam" class="container-fluid">
 
              </br>
@@ -53,54 +52,65 @@
                 <div id="about">
 
 
-                    <hr id="visionLine" class="line">
-                    <h1 style="padding-bottom:5%;">
+                    <center><hr class="line"></center>
+                    <h1 id= "pagetitle" style="padding-bottom:5%; text-align:center;">
                          Visionary Team
                     </h1>
 
-                    <div id="description">
-                        <p >Technology is ever changing and so are the people that use it.
-                         With the great shift in our society’s values and priorities, Illum finds itself on the precipice of change.
-                         Taking a different approach to technology design, Illum consults companies of all sizes to
-                            create products and services that extend to all races, genders, ethnicities, classes, ages, and all other identities.
-                            We are a team of designers, researchers, engineers, and technologists that have come together to
-                        facilitate the shift towards a more inclusive future.</p>
+            <div class="row">
+                  <div class="column">
+                     <div id="description">
+                         <p>Technology is ever changing and so are the people that use it.
+                             With the great shift in our society’s values and priorities, Illum finds itself on the precipice of change.
+                             Taking a different approach to technology design, Illum consults companies of all sizes to
+                             create products and services that extend to all races, genders, ethnicities, classes, ages, and all other identities.
+                             We are a team of designers, researchers, engineers, and technologists that have come together to
+                             facilitate the shift towards a more inclusive future.</p>
 
+                     </div>
+                  </div>
+              <div class="column">
+                    <div id="teamMembers" class="row justify-content-md-center">
+                          <div class="col-sm-4">
+                           <img id="whitney" src="./static/media/whitney.png" class="img-responsive" alt="Photo of Whitney Nelson">
+                              <br><br>
+                              <h6>Whitney Nelson</h6>
+                              <h7>Visionary Director</h7><br>
+                              <h8>She/Her</h8>
+                          </div>
+                        <div class="col-sm-4">
+                           <img id="zora" src="./static/media/zora.png" class="img-responsive" alt="Photo of Zora Moore">
+                            <br><br>
+                            <h6>Zora Moore</h6>
+                             <h7>Managing Director</h7><br>
+                              <h8>She/Her</h8>
+                          </div>
+                        <div class="col-sm-4">
+                           <img id="kamali" src="./static/media/kamali.png" class="img-responsive" alt="Photo of Kamali Lowe">
+                            <br><br>
+                            <h6>Kamali Lowe</h6>
+                             <h7>Director of Communications</h7><br>
+                              <h8>She/Her</h8>
+                          </div>
                     </div>
+
+              </div>
+             </div>
 
 
 
                 </div>
 
 
-            <div id="teamMembers" class="row justify-content-md-center">
-                  <div class="col-sm-4">
-                   <img id="whitney" src="./static/media/whitney.png" class="img-responsive" alt="Photo of Whitney Nelson">
-                      <h6>Whitney Nelson</h6>
-                      <h7>Visionary Director</h7><br>
-                      <h7>She/Her</h7>
-                  </div>
-                <div class="col-sm-4">
-                   <img id="zora" src="./static/media/zora.png" class="img-responsive" alt="Photo of Zora Moore">
-                    <h6>Zora Moore</h6>
-                     <h7>Managing Director</h7><br>
-                      <h7>She/Her</h7>
-                  </div>
-                <div class="col-sm-4">
-                   <img id="kamali" src="./static/media/kamali.png" class="img-responsive" alt="Photo of Kamali Lowe">
-                    <h6>Kamali Lowe</h6>
-                     <h7>Director of Communications</h7><br>
-                      <h7>She/Her</h7>
-                  </div>
-            </div>
+
 
         </div>
 
         <div class="container-fluid" style="padding-left:8%;padding-right:8%;">
 
             <div id="pillarsTitle">
-                <hr id="pillarsLine" class="line">
-                <h2 style="text-align:center;padding-bottom:8%;">Our Pillars</h2>
+                <center><hr class="line"></center>
+                <h2 id= "pagetitle" style="text-align:center;padding-bottom:5%;">Our Pillars</h2>
             </div>
 
             <div class="row no-gutters" id=intersectionality">
@@ -114,6 +124,7 @@
                         and interdependent social groupings such as race, gender, class, sexual orientation, and religion.
                         Through understanding the nature of people’s overlapping identities and experiences we are able to
                         understand the complexity of prejudices they face.</p>
+                     <br>
 
                     <h6>Soo…. What does that have to do with technology? </h6>
 
@@ -126,51 +137,63 @@
             </div>
 
 
-            <div class="row no-gutters justify-content-end" id="empathy">
-
-                 <div id="pillar2" style="margin-bottom:3%;" class="col-12 col-md-7">
-                <h4 style="padding-bottom:2%;text-align:right;">Empathy</h4>
-                <p >Empathy— one of the most important traits humans have the ability to demonstrate, is what guides us
-                    through each step of our design process.
-                    One of our biggest advantages is our ability to understand and share another person's experiences and emotions.
-                    Our personal experiences and backgrounds position us to be able to empathize with marginalized
-                    communities often forgotten and left behind by technology pushing us to work towards creating
-                    technology that successfully uplifts their needs and wants.
-                </p>
-                 </div>
-                 <div class="col-2 col-md-1">
-                    <h3 id="two">2</h3>
-                 </div>
-
-            </div>
 
 
-             <div class="row no-gutters" id=intentionality">
-                <div class="col-2 col-md-1">
-                    <h3 id="three" style="text-align:center;">3</h3>
+        </div>
+
+
+
+        <div id="pillarsbg" class="container-fluid">
+            <div class="container-fluid" style="padding-left:8%;padding-right:8%;">
+                <div class="row no-gutters justify-content-end" id="empathy">
+
+                     <div id="pillar2" style="margin-bottom:3%;" class="col-12 col-md-7">
+                    <h4 style="padding-bottom:2%;text-align:right; ">Empathy</h4>
+                    <p >Empathy— one of the most important traits humans have the ability to demonstrate, is what guides us
+                        through each step of our design process.
+                        One of our biggest advantages is our ability to understand and share another person's experiences and emotions.
+                        Our personal experiences and backgrounds position us to be able to empathize with marginalized
+                        communities often forgotten and left behind by technology pushing us to work towards creating
+                        technology that successfully uplifts their needs and wants.
+                    </p>
+                     </div>
+                     <div class="col-2 col-md-1">
+                        <h3 id="two">2</h3>
+                     </div>
+
                 </div>
-                 <div id="pillar3" class="col-12 col-md-7" style="margin-bottom:3%; width:90%;">
-                     <h4 style="padding-bottom:2%;">Intentionality</h4>
-                    <p>Our designs affect many and we want to ensure that all persons feel accurately represented.
-                        As a result, we are intentional throughout our design process, ensuring the user’s diverse set
-                        of needs are considered at every step.</p>
-                 </div>
+                
+                 <div class="row no-gutters" id=intentionality">
+                    <div class="col-2 col-md-1">
+                        <h3 id="three" style="text-align:center;">3</h3>
+                    </div>
+                     <div id="pillar3" class="col-12 col-md-7" style="margin-bottom:3%; width:90%;"> <br>
+                         <h4 style="padding-bottom:2%;">Intentionality</h4>
+                        <p>Our designs affect many and we want to ensure that all persons feel accurately represented.
+                            As a result, we are intentional throughout our design process, ensuring the user’s diverse set
+                            of needs are considered at every step.</p>
+                     </div>
+                </div>
+
+
+                <div class="row no-gutters justify-content-end" id="disruptiveInnovation">
+
+                     <div id="pillar4" class="col-12 col-md-7" style="margin-bottom:3%;">
+                    <h4 style="padding-bottom:2%;text-align:right;">Disruptive Innovation</h4>
+                    <p>We want to shake the room! We are a team of trained and highly skilled designers, researchers,
+                        engineers, and technologists constantly working to drive innovation at the individual, team and organizational levels.
+                    </p>
+                     </div>
+                     <div class="col-2 col-md-1">
+                        <h3 id="four"style="text-align:center;">4</h3>
+                     </div>
+
+                </div>
             </div>
 
+        </div>
 
-            <div class="row no-gutters justify-content-end" id="disruptiveInnovation">
-
-                 <div id="pillar4" class="col-12 col-md-7" style="margin-bottom:3%;">
-                <h4 style="padding-bottom:2%;text-align:right;">Disruptive Innovation</h4>
-                <p>We want to shake the room! We are a team of trained and highly skilled designers, researchers,
-                    engineers, and technologists constantly working to drive innovation at the individual, team and organizational levels.
-                </p>
-                 </div>
-                 <div class="col-2 col-md-1">
-                    <h3 id="four"style="text-align:center;">4</h3>
-                 </div>
-
-            </div>
+        <div class="container-fluid" style="padding-left:8%;padding-right:8%;">
 
             <div class="row no-gutters" id=integrity">
                 <div class="col-2 col-md-1">

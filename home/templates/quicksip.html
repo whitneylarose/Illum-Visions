@@ -23,50 +23,61 @@
      <div id="quicksip" class="container-fluid">
 
 
-        <hr class="line">
-        <h2 style="text-align:center;padding-bottom:5%;">
+        <center><hr class="line"></center>
+        <h2 id="pagetitle" style="text-align:center;padding-bottom:5%;">
              QuickSip
         </h2>
 
 
      </div>
-
     <div id="problemspace" class="container-fluid">
+      <div class="row">
+          <div class="column left">
+            <div id="problemspace" class="container-fluid">
+                <h4>Problem Space</h4>
+                <p> Waiters and bartenders earn almost 35K less than the national average. Yet, they make up 2.6 million jobs
+                    often working 12-hour shifts with minimal breaks. For waiters, it can be stressful to manage and keep
+                    track of customer orders especially during peak hours. This  often results in poor customer service and
+                    bad reviews for the establishments.  Additionally, customers face long and inconvenient wait times either standing in line
+                    or weaving through the crowd.</p>
+          </div>
+            </div>
+          <div class="column right">
+               <video style="width:100%; display: block; margin: auto;padding-top:20%; " muted autoplay="autoplay" loop>
+                <source src="{% static 'media/waiting.mp4' type='video/mp4' %}">
+                Your browser does not support the video tag.
+               </video>
 
-        <h4>Problem Space</h4>
-        <p> Waiters and bartenders earn almost 35K less than the national average. Yet, they make up 2.6 million jobs
-            often working 12-hour shifts with minimal breaks. For waiters, it can be stressful to manage and keep
-            track of customer orders especially during peak hours. This  often results in poor customer service and
-            bad reviews for the establishments.  Additionally, customers face long and inconvenient wait times either standing in line
-            or weaving through the crowd.</p>
-
-        <video style="width:50%; display: block; margin: auto;padding-bottom:5%; " muted autoplay="autoplay" loop>
-            <source src="{% static 'media/waiting.mp4' type='video/mp4' %}">
-            Your browser does not support the video tag.
-        </video>
-
-
+          </div>
+       </div>
+      </div>
     </div>
 
 
     <div id="solution" class="container-fluid bg-black">
-
 
         <h4>Solution</h4>
         <p>Waiters are often flooded with orders that can be difficult to track and manage. We streamlined the ordering process
             by design a mobile application that allows real-time ordering functions that appear on a shared iPad for bartenders.
             The mobile applications also enforces automated tips ensuring waiters are being accurately compensated.</p>
 
-        <img id="merchants" src="./static/media/merchants.png" height="300px" width="800px" style="padding-bottom:5%; " class="img-responsive img-fluid" alt="">
 
+           <center>
+               <img id="qs1" src="./static/media/QS Ipad 1.png"  class="img-responsive" alt="">
+               <img id="qs2" src="./static/media/QS Ipad 2.png"  class="img-responsive" alt="">
+               <img id="qs3" src="./static/media/QS Ipad 3.png"  class="img-responsive" alt="">
+           </center>
          <p>In additon, the application offers automated user age verification, detailed view of the menus, order tracking features, and
              aimed to reduce wait time. </p>
 
-        <img src="./static/media/consumers.png" style="width: 1000px;height: 250px;" class="img-responsive" alt="">
+
+               <img id="qsiphone2" src="./static/media/QS iphone g1.png"  class="img-responsive" alt="">
+               <img id="qsiphone" src="./static/media/consumers.png"  class="img-responsive" alt="">
 
 
-
-        <input class="btn" id="gitButton" style="display: block; " type="button" onclick="ourWork()"  value="Explore Other Projects">
+        <center>
+            <input class="btn" id="gitButton" style="display: block; " type="button" onclick="ourWork()"  value="Explore Other Projects">
+        </center>
 
 
         <script>

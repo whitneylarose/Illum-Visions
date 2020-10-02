@@ -19,17 +19,18 @@
 
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet">
+
 
 
 </head>
 {% include "base.html" %}
-
+<br>
     <body>
             <video style="width:100%;" autoplay="autoplay"  muted loop>
             <source src="{% static 'media/coreValues.mp4' type='video/mp4' %}">
             Your browser does not support the video tag.
             </video>
-
 
 
         <div id="whatwedo" class="row container-fluid">
@@ -39,7 +40,7 @@
                 <div id="wwd_content" class="container-fluid">
 
                     <hr class="line">
-                    <h2>
+                    <h2 id="pagetitle">
                         What We Do
                     </h2>
                 </div>
@@ -62,11 +63,10 @@
                           <div class="popup" onclick="strategyPopup()">
                               <i class="material-icons" style="font-size:48px;color:#E47957">add_circle</i>
                               <span class="popuptext" id="strategyPopup">
-                                  <p style="font-weight:bold; text-align: center;">Services</p>
-                                  <p>We strategically develop requirements and resources for the creation
-                                and release of digital products. Centering intentionality throughout our planning, we
-                                ensure that the business vision, user needs, and technical capabilities are aligned with
-                                your goals and extend varying needs of different user types.</p>
+                                <br>
+                                  <p1>We strategically develop requirements and resources for the creation and release of digital products.
+                                      With an emphasis on intentionality throughout our planning, we ensure that the business vision, user needs,
+                                      and technical capabilities are aligned with your goals and extend varying needs of different user types.</p1>
                                         </span>
                             </div>
 
@@ -99,10 +99,10 @@
                           <div class="popup" onclick="reserachPopup()">
                               <i class="material-icons" style="font-size:48px;color:#E47957">add_circle</i>
                               <span class="popuptext" id="reserachPopup">
-                                  <p style="font-weight:bold; text-align: center;">Services</p>
-                                  <p>We conduct extensive user research with an emphasis on engaging underrepresented
+                                 <br>
+                                  <p1>We conduct extensive user research with an emphasis on engaging underrepresented
                                       populations and highlighting various use cases related to their layered experiences.
-                                  </p>
+                                  </p1>
                                         </span>
 
                                     <script>
@@ -143,11 +143,11 @@
                           <div class="popup" onclick="designPopup()">
                               <i class="material-icons" style="font-size:48px;color:#E47957">add_circle</i>
                               <span class="popuptext" id="designPopup">
-                                  <p style="font-weight:bold; text-align: center;">Services</p>
-                                  <p>
+                                   <br>
+                                  <p1>
                                       Utilizing insights gathered through our research, we develop innovative design
                                       solutions for our clients.
-                                  </p>
+                                  </p1>
                                         </span>
 
                                     <script>
@@ -179,11 +179,11 @@
                        <div class="popup" onclick="brandingPopup()">
                               <i class="material-icons" style="font-size:48px;color:#E47957">add_circle</i>
                               <span class="popuptext" id="brandingPopup">
-                                  <p style="font-weight:bold; text-align: center;">Services</p>
-                                  <p>
+                                  <br>
+                                  <p1>
                                       We execute strategies to solidify brand identity through deliberate design
-                                      approaches that is cohesive and relatable to a multitude of customers.
-                                  </p>
+                                      approaches that are cohesive and relatable to a multitude of customers.
+                                  </p1>
                                         </span>
 
                                     <script>
@@ -228,6 +228,7 @@
           <div class="form-group">
             <textarea type="text" name="message" class="form-control border border-top-0 border-right-0 border-left-0" id="message" placeholder="Your message"></textarea>
           </div>
+            <br>
             <div class="form-actions d-flex justify-content-center ">
             <input class="btn btn-default" id="gitButton" type="submit" value="Get in Touch">
         </div>

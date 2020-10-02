@@ -8,6 +8,21 @@
   text-align: center;
 
 }
+#pagetitle{
+    font-size:3vw;
+    text-align: left;
+    padding-top: 0%;
+    padding-bottom: 1%;
+}
+
+/* Responsive text */
+@media screen and (max-width: 600px) {
+  #pagetitle{
+   font-size:30px;
+   padding-bottom: 10%;}
+
+ }
+
 
 #social{
 
@@ -31,7 +46,9 @@
     background-color:#F4E8DC;
     max-width:100%;
     padding-bottom: 4%;
-
+    padding-left: 3%;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
 }
 
 #strategy-info{
@@ -73,15 +90,24 @@
     height: 800px;
     width:100%;
     display: block;
+    margin: 0;
 
 }
 
 
 hr.line {
-  border: 3px solid #E47957;
+  border: 1px solid #E47957;
   width: 10%;
   margin-top: 5%;
   margin-bottom: 2%;
+}
+
+@media screen and (max-width: 600px) {
+  hr.line {
+    width: 20%;
+    display: block;
+    margin-bottom: 20px;
+  }
 }
 
 .card {
@@ -89,11 +115,12 @@ hr.line {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
   width: 90%;
-  margin-bottom: 2%;
+  margin-bottom: 1%;
   transition: 0.3s;
   transform-style: preserve-3d;
   font-size; 2vw;
   padding: 16px;
+  font-family: 'Poppins', sans-serif;
   text-align: left;
   background-color: #f1f1f1;
 
@@ -214,9 +241,10 @@ video::-webkit-media-controls {
 }
 
 #video{
-  background-color: white;
+  background-color: #F4E8DC;
   height: 300px;
   max-width:100%;
+
 }
 
 .fade {
@@ -314,8 +342,10 @@ video::-webkit-media-controls {
 	100% { opacity: 0; }
 }
 
-
-
+/*popup text*/
+p1{
+font-size: 18px;
+}
 
 /* Popup container - can be anything you want */
 .popup {
@@ -332,7 +362,7 @@ video::-webkit-media-controls {
 .popup .popuptext {
   visibility: hidden;
   width: 390px;
-  height: 325px;
+  height: 300px;
   background-color: #E37956;
   color: #fff;
   text-align: leftToRight;
@@ -357,7 +387,7 @@ ul {
   content: "";
   position: absolute;
   top: 100%;
-  left: 50%;
+  left: 15%;
   margin-left: -5px;
   border-width: 5px;
   border-style: solid;
